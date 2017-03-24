@@ -14,9 +14,9 @@ public class PlayerControls : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Input.GetKeyDown(KeyCode.Q)) {
-            print("Fire");
             // fire projectile
             if (!pB.IsFiring()) {
+                print("Fire");
                 pB.Fire(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             }
         }
